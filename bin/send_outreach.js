@@ -6,11 +6,11 @@ const logPath = 'logs/outreach.jsonl';
 fs.mkdirSync('logs', {recursive:true});
 const sentLines = fs.existsSync(logPath) ? fs.readFileSync(logPath,'utf8').trim().split(/\n+/).filter(Boolean).map(l=>{try{return JSON.parse(l)}catch{return null}}).filter(Boolean) : [];
 const already = new Set(sentLines.filter(r => r.status === 'sent').map(r => r.email));
-const badEmail = e => !e || /jobs@|careers@|noreply|no-reply|blync\.io|goappr|brigantine|fogo\.com/.test(e);
+const badEmail = e => !e || /jobs@|careers@|noreply|no-reply|blync\.io|goappr|brigantine|fogo\.com|you@email\.com|support@phlox\.com|contact@imenu4u\.com|example\.com|test@/i.test(e);
 const selected = prospects
   .filter(p => !badEmail(p.email) && !already.has(p.email))
   .filter(p => !/college|autozone|valvoline|european wax|fogo/i.test(p.name))
-  .slice(0, 12);
+  .slice(0, 10);
 
 function firstName(p) { return `${p.name} team`; }
 function category(p) { return (p.category || 'service business').replace('_',' '); }
