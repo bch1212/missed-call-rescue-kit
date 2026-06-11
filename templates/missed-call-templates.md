@@ -6,7 +6,7 @@
 
 ## Missed-call auto-text
 
-“Thanks for calling {{business}} — sorry we missed you. What can we help with today? Send service needed, timing, location/neighborhood, and any photos/details. We’ll reply with next steps.”
+“Thanks for calling {{business}} - sorry we missed you. What can we help with today? Send service needed, timing, location/neighborhood, and any photos/details. We’ll reply with next steps.”
 
 ## After-hours version
 

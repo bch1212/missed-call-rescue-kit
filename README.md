@@ -20,14 +20,14 @@ They miss calls during jobs, evenings, lunch rush, or weekends and currently rel
 
 ## Files
 
-- `bin/generate_rescue_plan.js` — creates a custom kit from a short intake JSON.
-- `samples/sample-input.json` — sample business intake.
-- `reports/sample-rescue-plan.md` — generated sample output.
-- `templates/` — reusable voicemail, SMS, email, callback, and tracker templates.
-- `sales/offer.md` — paid offer and guarantee boundaries.
-- `gtm/outreach-drafts.md` — email drafts and positioning.
-- `index.html` — static landing page for GitHub Pages.
-- `data/prospects.csv/json` — ranked prospect list from public sources.
+- `bin/generate_rescue_plan.js` - creates a custom kit from a short intake JSON.
+- `samples/sample-input.json` - sample business intake.
+- `reports/sample-rescue-plan.md` - generated sample output.
+- `templates/` - reusable voicemail, SMS, email, callback, and tracker templates.
+- `sales/offer.md` - paid offer and guarantee boundaries.
+- `gtm/outreach-drafts.md` - email drafts and positioning.
+- `index.html` - static landing page for GitHub Pages.
+- `data/prospects.csv/json` - ranked prospect list from public sources.
 
 ## Verify locally
 

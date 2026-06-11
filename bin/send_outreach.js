@@ -18,11 +18,11 @@ function body(p) { return `Hi ${firstName(p)},
 
 I’m testing a small $249 setup for ${category(p)} teams that miss calls while serving customers: a better voicemail, missed-call text, callback script, inquiry questions, and a simple lead tracker.
 
-The goal is not more software — just making sure a high-intent caller does not disappear before someone can respond.
+The goal is not more software - just making sure a high-intent caller does not disappear before someone can respond.
 
 For ${p.name}, I’d start with a simple missed-call text like:
 
-“Thanks for calling ${p.name} — sorry we missed you. What can we help with today? Send the service/event needed, preferred timing, location, and any useful details. We’ll reply with next steps.”
+“Thanks for calling ${p.name} - sorry we missed you. What can we help with today? Send the service/event needed, preferred timing, location, and any useful details. We’ll reply with next steps.”
 
 If useful, reply CALLS with your current phone/website and I’ll send a free one-page preview. The full 48-hour setup is $249; no pressure if it’s not relevant. Reply “not a fit” and I won’t follow up.
 

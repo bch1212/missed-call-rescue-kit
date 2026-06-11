@@ -1,4 +1,4 @@
-# Sales Offer — Missed-Call Rescue Kit
+# Sales Offer - Missed-Call Rescue Kit
 
 ## One-sentence value proposition
 
@@ -6,8 +6,8 @@ Turn missed calls into organized callbacks and booked-job opportunities with a 4
 
 ## Price
 
-- **$249 Setup Sprint:** custom voicemail, missed-call text, callback script, intake questions, 6 follow-up messages, tracker template.
-- **$499 Concierge Sprint:** setup sprint plus 10 custom inquiry responses, branded Google Form/Sheet layout, and 7-day callback SOP.
+- **$249 Setup Package:** custom voicemail, missed-call text, callback script, intake questions, 6 follow-up messages, tracker template.
+- **$499 Concierge Package:** setup package plus 10 custom inquiry responses, branded Google Form/Sheet layout, and 7-day callback SOP.
 
 ## Guarantee / refund boundary
 
