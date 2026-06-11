@@ -1,0 +1,12 @@
+{
+  "businessName": "Harbor Detail Studio",
+  "category": "mobile auto detailing",
+  "ownerName": "Jamie",
+  "primaryPhone": "(555) 010-1199",
+  "serviceArea": "San Diego coastal neighborhoods",
+  "topServices": ["maintenance detail", "full interior reset", "ceramic coating consult"],
+  "missedCallMoment": "while working on cars or driving between appointments",
+  "currentVoicemail": "Leave a message and we'll call you back.",
+  "bookingLink": "https://example.com/book",
+  "tone": "friendly, quick, professional"
+}
