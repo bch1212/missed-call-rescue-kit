@@ -1,0 +1,25 @@
+# Local secrets and environment
+.env
+.env.*
+!.env.example
+
+# Real prospect exports. Committed sample files are fake.
+data/prospects*.csv
+data/prospects*.json
+!data/prospects.sample.csv
+!data/prospects.sample.json
+
+# Local databases
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+*.sqlite-journal
+
+# Runtime logs and scratch
+logs/
+*.log
+
+# Local tooling and OS files
+node_modules/
+.DS_Store

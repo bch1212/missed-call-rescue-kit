@@ -27,7 +27,7 @@ They miss calls during jobs, evenings, lunch rush, or weekends and currently rel
 - `sales/offer.md` - paid offer and guarantee boundaries.
 - `gtm/outreach-drafts.md` - email drafts and positioning.
 - `index.html` - static landing page for GitHub Pages.
-- `data/prospects.csv/json` - ranked prospect list from public sources.
+- `data/prospects.sample.csv` and `data/prospects.sample.json` - fake prospect rows (`example.com` addresses and 555 numbers). `bin/send_outreach.js` reads `PROSPECTS_PATH`, or this sample JSON when that variable is unset. Keep real exports on the machine only; they are gitignored.
 
 ## Verify locally
 

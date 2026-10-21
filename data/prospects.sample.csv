@@ -1,0 +1,4 @@
+id,name,category,email,website,phone,trigger,score,source
+s1,Harbor Detail Studio,mobile auto detailing,jamie@example.com,https://example.com/harbor,(555) 010-1199,missed calls while on a job,80,sample
+s2,Northside Lawn Co,landscaping,alex@example.com,https://example.com/northside,(555) 010-2048,after-hours voicemail only,70,sample
+s3,Example Event Loft,event venue,bookings@example.com,https://example.com/loft,(555) 010-3088,weekend rush misses the phone,60,sample

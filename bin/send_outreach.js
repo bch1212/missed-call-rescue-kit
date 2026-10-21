@@ -1,15 +1,15 @@
 const fs = require('fs');
 const cp = require('child_process');
 
-const prospects = JSON.parse(fs.readFileSync('data/prospects.json','utf8'));
+const prospectsPath = process.env.PROSPECTS_PATH || 'data/prospects.sample.json';
+const prospects = JSON.parse(fs.readFileSync(prospectsPath, 'utf8'));
 const logPath = 'logs/outreach.jsonl';
 fs.mkdirSync('logs', {recursive:true});
 const sentLines = fs.existsSync(logPath) ? fs.readFileSync(logPath,'utf8').trim().split(/\n+/).filter(Boolean).map(l=>{try{return JSON.parse(l)}catch{return null}}).filter(Boolean) : [];
 const already = new Set(sentLines.filter(r => r.status === 'sent').map(r => r.email));
-const badEmail = e => !e || /jobs@|careers@|noreply|no-reply|blync\.io|goappr|brigantine|fogo\.com|you@email\.com|support@phlox\.com|contact@imenu4u\.com|example\.com|test@/i.test(e);
+const badEmail = e => !e || /jobs@|careers@|noreply|no-reply|you@email\.com|example\.com|example\.org|test@/i.test(e);
 const selected = prospects
   .filter(p => !badEmail(p.email) && !already.has(p.email))
-  .filter(p => !/college|autozone|valvoline|european wax|fogo/i.test(p.name))
   .slice(0, 10);
 
 function firstName(p) { return `${p.name} team`; }
@@ -38,10 +38,10 @@ for (const p of selected) {
     const sent = cp.spawnSync('himalaya', ['template','send','-a','gmail'], {input: template, encoding:'utf8'});
     if (sent.status !== 0) throw Object.assign(new Error(sent.stderr || sent.stdout || `exit ${sent.status}`), {stdout: sent.stdout, stderr: sent.stderr});
     rec.status='sent'; rec.stdout=(sent.stdout || '').trim();
-    console.log(`sent ${p.email}: ${rec.stdout}`);
+    console.log('sent 1');
   } catch (e) {
     rec.status='error'; rec.stdout=(e.stdout||'').toString(); rec.stderr=(e.stderr||e.message||'').toString();
-    console.error(`error ${p.email}: ${rec.stderr}`);
+    console.error('error 1');
   }
   fs.appendFileSync(logPath, JSON.stringify(rec)+'\n');
 }
