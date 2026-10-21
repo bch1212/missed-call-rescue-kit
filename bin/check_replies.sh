@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
-cd /Users/bretthalverson/Projects/revenue-lab/ventures/missed-call-rescue-kit
+cd "$(dirname "$0")/.."
 mkdir -p logs "$HOME/.hermes/state/missed-call-rescue-kit"
 LOG=logs/reply-watch.log
 STATE="$HOME/.hermes/state/missed-call-rescue-kit/seen.txt"

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "s1",
+    "name": "Harbor Detail Studio",
+    "category": "mobile auto detailing",
+    "email": "jamie@example.com",
+    "website": "https://example.com/harbor",
+    "phone": "(555) 010-1199",
+    "trigger": "missed calls while on a job",
+    "score": 80,
+    "source": "sample"
+  },
+  {
+    "id": "s2",
+    "name": "Northside Lawn Co",
+    "category": "landscaping",
+    "email": "alex@example.com",
+    "website": "https://example.com/northside",
+    "phone": "(555) 010-2048",
+    "trigger": "after-hours voicemail only",
+    "score": 70,
+    "source": "sample"
+  },
+  {
+    "id": "s3",
+    "name": "Example Event Loft",
+    "category": "event venue",
+    "email": "bookings@example.com",
+    "website": "https://example.com/loft",
+    "phone": "(555) 010-3088",
+    "trigger": "weekend rush misses the phone",
+    "score": 60,
+    "source": "sample"
+  }
+]
